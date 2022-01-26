@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user.scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="App Api Wompi">
+    <meta name="author" content="Luis Mart"> 
+    <meta name="robots" content="index/follow">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="refresh" content="3600">
+    <title>App Api Wompi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/tablet.css" media="(min-width: 480px)">
+    <link rel="stylesheet" href="assets/css/desktop.css" media="(min-width: 1024px)">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <header class="pay-header">
+                <p class="mandamiento">1002-12-000009</p>
+                <article class="info">
+                    <div class="info-text">
+                        <p class="info-casa">Finca de Asturias, Polígono E</p>
+                        <p class="info-cliente">Nombre: <span>Luis Cruz</span></p>
+                        <p class="info-direccion">Dirección: <span>Senda Barcelona Sur #1</span></p>
+                        <div class="fechas">
+                            <p class="fecha-pago">Fecha máxima de pago: <span>06-06-2021</span></p>
+                        </div>
+                    </div>
+                    <div class="monto">
+                        <p class="monto-total">$40.00</p>
+                    </div>
+                </article>
+            </header>
+
+            <div class="secure">
+
+            </div>
+
+            <article class="pay">
+                <h6 class="pay-method">Metodo de pago</h6>
+                <div class="tab">
+                    <div class="tab-buttons">
+                        <button class="btn btn-tab tab1" tab="card"><span>Pago con tarjeta</span></button>
+                        <button class="btn btn-tab tab2" tab="btc"><span>Pago con bitcoin</span></button>
+                    </div>
+                    <p class="line line-left"></p>
+                    <div class="tab-container">
+                        <div class="tab-content panel1">
+                            <form id="formPayCard">
+                                <div class="form-group">
+                                    <span>Número de tarjeta</span>
+                                    <input id="card_number" type="text" maxlength="22">
+                                </div>
+                                <div class="form-group expiration">
+                                    <span>Fecha de expiración</span>
+                                    <div class="expiration-date">
+                                        <select name="card_month" id="card_month">
+                                            <option value="0" selected disabled>Mes</option>
+                                            <option value="1">Enero</option>
+                                            <option value="2">Febrero</option>
+                                            <option value="3">Marzo</option>
+                                            <option value="4">Abril</option>
+                                            <option value="5">Mayo</option>
+                                            <option value="6">Junio</option>
+                                            <option value="7">Julio</option>
+                                            <option value="8">Agosto</option>
+                                            <option value="9">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                        </select>
+                                        <select name="card_year" id="card_year">
+                                            <option value="0" selected disabled>Año</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2025">2025</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-content">
+                                    <div class="form-group cliname">
+                                        <span>Nombre</span>
+                                        <input id="card_name" type="text" maxlength="100">
+                                    </div>
+                                    <div class="form-group cvv">
+                                        <span>CVV</span>
+                                        <input id="card_cvv" type="tel" maxlength="3">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn" id="test_transactions">Pagar $40.00</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-content panel2">
+                            <form>
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <span>Nombre</span>
+                                        <input id="client_name" type="text">                                    
+                                    </div>
+                                    <div class="form-group">
+                                        <span>Apellido</span>
+                                        <input id="client_lastname" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span>Correo electrónico</span>
+                                    <input id="client_email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <span>Fecha de nacimiento</span>
+                                    <div class="expiration-date born-date">
+                                        <input id="client_day" type="number" placeholder="Día">
+                                        <select name="client_month" id="client_month">
+                                            <option value="0" selected disabled>Mes</option>
+                                            <option value="1">Enero</option>
+                                            <option value="2">Febrero</option>
+                                            <option value="3">Marzo</option>
+                                            <option value="4">Abril</option>
+                                            <option value="5">Mayo</option>
+                                            <option value="6">Junio</option>
+                                            <option value="7">Julio</option>
+                                            <option value="8">Agosto</option>
+                                            <option value="9">Septiembre</option>
+                                            <option value="10">Octubre</option>
+                                            <option value="11">Noviembre</option>
+                                            <option value="12">Diciembre</option>
+                                        </select>
+                                        <input id="client_year" type="number" placeholder="Año">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span>Documento de identidad</span>
+                                    <input id="client_DUI" type="number">
+                                </div>
+                                <div class="form-group">
+                                    <span>Dirección</span>
+                                    <input id="client_dir" type="text">
+                                </div>
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <span>Región</span>
+                                        <select name="client_region" id="client_region">
+                                            <option value="0" disabled>País</option>
+                                            <option value="CA">Canadá</option>
+                                            <option value="CR">Costa Rica</option>
+                                            <option value="SV" selected>El Salvador</option>
+                                            <option value="US">Estados Unidos</option> 
+                                            <option value="GT">Guatemala</option>
+                                            <option value="HN">Honduras</option>
+                                            <option value="MX">México</option>
+                                            <option value="NI">Nicaragua</option>
+                                            <option value="PA">Panamá</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <span>Territorio</span>
+                                        <select name="client_territorio" id="client_territorio">
+                                            <option value="0" disabled>Departamento</option>
+                                            <option value="SV-AH">Ahuachapán</option>
+                                            <option value="SV-CA">Cabañas</option>
+                                            <option value="SV-CH">Chalatenango</option>
+                                            <option value="SV-CU">Cuscatlán</option>
+                                            <option value="SV-LI">La Libertad</option>
+                                            <option value="SV-MO">Morazán</option>
+                                            <option value="SV-PA">La Paz</option>
+                                            <option value="SV-SA">Santa Ana</option>
+                                            <option value="SV-SM">San Miguel</option>
+                                            <option value="SV-SO">Sonsonate</option>
+                                            <option value="SV-SS" selected>San Salvador</option>
+                                            <option value="SV-SV">San Vicente</option>
+                                            <option value="SV-UN">La Unión</option>
+                                            <option value="SV-US">Usulután</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn" id="payWithBTC">Continuar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <a class="xtab">X</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <div class="modal-items">Hello, I am a modal!</div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/jquery-3.6.0.min.js"></script>
+    <script src="assets/scripts/design.js"></script>
+    <script src="assets/scripts/functions.js"></script>
+    <script src="assets/scripts/index.js"></script>
+</body>
+</html>

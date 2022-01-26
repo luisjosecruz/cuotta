@@ -1,0 +1,162 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+} 
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: #e5e9ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luismartbox {
+    width: 790px;
+    min-height: 450px;
+    background: rgba(255,255,255,.7);
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+}
+
+.luismartbox-header {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.luismartbox-header h1 {
+    font-size: 2.6rem;
+}
+
+.luismartbox-header p {
+    font-size: 1.6rem;
+}
+
+.luismartbox-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luismartbox-img {
+    width: 50%;
+    padding: 40px;
+}
+
+.luismartbox-img img {
+    width: 100%;
+}
+
+.luismartbox-login {
+    width: 50%;
+    padding: 40px 60px;
+}
+
+.luismartbox-menu {
+    width: 100%;
+    padding: 40px;
+}
+
+.luismartbox-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.luismartbox-menu ul li a {
+    display: block;
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 5px;
+    font-size: 1.6rem;
+    color: #e5e9ec;
+    background: #383838;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+.form-group {
+    width: 100%;
+    padding: 6px 0;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 5px 0;
+    text-align: left;
+    color: #787878;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.075);
+    padding: 0 10px;
+}
+
+.form-group input[type="submit"] {
+    padding: 10px 44px;
+    border-radius: 25px;
+    margin-top: 20px;
+    border: 2px solid #0062b7;
+    cursor: pointer;
+    font-weight: bold;
+    color: #0062b7;
+    font-size: 1.4rem;
+    transition: all .26s;
+}
+
+.form-group input[type="submit"]:hover {
+    box-shadow: -1px 2px 4px rgba(0,0,0,.3);
+}
+
+#img_ppal_frm {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 5px auto 5px auto;
+}
+
+.bkg-svg_img_ppal_frm {
+    fill: #0062b7;
+}
+
+.tt1-svg_img_ppal_frm, .tt2-svg_img_ppal_frm {
+    fill: #fff;
+}
+
+.body-svg_img_ppal_frm {
+    fill: #013874;
+}

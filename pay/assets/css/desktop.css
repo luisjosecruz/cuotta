@@ -1,0 +1,16 @@
+body{
+    background: var(--some-white);
+}
+
+.container{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.pay.pay-active{
+    width: 400px;
+    background: #fefefe;
+    padding-bottom: 0;
+}
+

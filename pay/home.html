@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuotta Pay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/icons/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main class="container">
+        <header></header>
+        <section class="aside">
+            <button class="btn" id="payment_link">Get Pay Links</button>
+            <button class="btn" id="btc_pay">Pagar con Bitcoin</button>
+            
+            <div class="wompi_button_widget" data-url-pago="https://pagos.wompi.sv/IntentoPago/Redirect?id=18fe7dd7-565f-4d37-9866-b32902dbf6b6&esWidget=1" data-render="widget"></div>
+        </section>
+        <section class="wrapper">
+            <article class="wrap" id="result">
+                <div class="wrap_data">
+                    <h2>Datos para la compra</h2>
+                    <form>
+                        <div class="form_group">   
+                            <label for="product">
+                                <span>Mandamiento</span>
+                                <input class="input_info" id="mand" type="text" value="1002-12-000009" readonly>
+                            </label> 
+                            <label for="amount">
+                                <span>Monto</span>
+                                <input class="input_info" id="amount" type="number" placeholder="Nombre" value="20">
+                            </label>
+                        </div>
+                        <div class="form_group">
+                            <label for="client">
+                                <span>Nombre Cliente</span>
+                                <input id="client" type="text" placeholder="Nombre" value="Luis Cruz">
+                            </label>
+                            <label for="email">
+                                <span>Correo Electrónico</span>
+                                <input id="email" type="text" placeholder="Correo" value="lcruz@elmundo.sv">
+                            </label>
+                        </div>
+                        <div class="form_group">
+                            <label for="card_number">
+                                <span>Número de tarjeta</span>
+                                <input id="card_number" type="number" placeholder="Número de tarjeta" value="0000000000000000">
+                            </label>
+                            <label for="cvv">
+                                <span>CVV</span>
+                                <input id="cvv" type="number" placeholder="CVV" value="123">
+                            </label>
+                        </div>
+                        <div class="form_group">
+                            <label for="expire_month">
+                                <span>Mes Vencimiento</span>
+                                <input id="expire_month" type="number" placeholder="Mes de vencimiento" value="5">
+                            </label>
+                            <label for="expire_year">
+                                <span>Año Vencimiento</span>
+                                <input id="expire_year" type="number" placeholder="Año de vencimiento" value="2024">
+                            </label>
+                        </div>
+                        <div class="form_group">
+                            <button class="btn" id="test_transactions">Proceder a Pagar</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <footer></footer>
+    </main>
+
+    <script src="assets/scripts/jquery-3.6.0.min.js"></script>
+    <script src="assets/scripts/index.js"></script>
+</body>
+</html>

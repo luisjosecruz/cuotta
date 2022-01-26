@@ -1,0 +1,70 @@
+
+
+.container{
+    padding: 20px;
+    height: auto;
+    background: transparent;
+}
+
+.mandamiento{
+    padding: 50px 0 0;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.info{
+    min-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.info-cliente, .info-direccion, .fecha-pago{
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    padding: 2px 0;
+}
+
+.monto{
+    padding: 0 0 0 20px;
+}
+
+.tab-content{
+    padding: 40px;
+}
+
+.pay{
+    margin: 0 auto;
+}
+
+.pay.pay-active{
+    background: transparent;
+    top: 0;
+    border-radius: 20px;
+    box-shadow: 0px 30px 90px var(--black-rgba-30);
+}
+
+.pay.pay-active .pay-method{
+    color: var(--just-dark);
+}
+
+.form-group span{
+    color: var(--just-dark);
+}
+
+.form-group .btn{
+    background: var(--blue-house);
+    color: var(--just-white);
+}
+
+.form-group input, .form-group select{
+    border: 1px solid var(--gray);
+}
+
+.form-group input:focus{
+    border: 2px solid var(--darkgray);
+    box-shadow: inset 2px 4px 6px var(--black-rgba-15);
+}

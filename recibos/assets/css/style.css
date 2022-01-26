@@ -1,0 +1,447 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    background: #013874;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 6%), 0 1px 4px rgb(0 0 0 / 8%);
+}
+
+.header-img {
+    height: 100%;
+    padding: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-img img {
+    width: 135px;
+}
+
+.header-title {
+    padding-top: 2px;
+    color: white;
+    font-size: 2.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #eee;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: flex-end;
+    /* padding: 92px 20px 20px; */
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 6%), 0 1px 4px rgb(0 0 0 / 8%);
+}
+
+.aside-content {
+    padding: 80px 0px;
+    position: absolute;
+    bottom: 0;
+}
+
+.aside-content p {
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.aside-content .btns {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div-gpt-ad-1641416523864-0, #div-gpt-ad-1642027276963-0 {
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 6%), 0 1px 4px rgb(0 0 0 / 8%);
+}
+
+#div-gpt-ad-1641416523864-0::before, #div-gpt-ad-1642027276963-0::before {
+    content: 'Publicidad';
+    background-color: #0062b7;
+    color: white;
+    position: absolute;
+    top: -26px;
+    left: 0;
+    padding: 6px 8px;
+    border-radius: 4px 4px 0 0;
+    font-size: 12px;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+#div-gpt-ad-1641416523864-0 {
+    margin-bottom: 50px;
+}
+
+#first {
+    min-width: 300px; 
+    min-height: 50px;
+    margin-top: 100px;
+}
+
+.bloques {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.b1 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b2 {
+    width: 30%;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 30px;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 6%), 0 1px 4px rgb(0 0 0 / 8%);
+    background: #fff;
+}
+
+.ticket {
+    position: relative;
+    width: 500px;
+    padding: 20px;
+    margin-top: 100px;
+    background: white;
+    box-shadow: 0 4px 20px 1px rgb(0 0 0 / 6%), 0 1px 4px rgb(0 0 0 / 8%);
+}
+
+.ticket:after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    transform-Origin: 0% 100%;
+    background: white;
+    left: 0;
+    bottom: 0;
+    box-shadow: 
+        15px -15px 0 0 white, 
+        30px -30px 0 0 white, 
+        45px -45px 0 0 white, 
+        60px -60px 0 0 white, 
+        75px -75px 0 0 white, 
+        90px -90px 0 0 white, 
+        105px -105px 0 0 white, 
+        120px -120px 0 0 white, 
+        135px -135px 0 0 white, 
+        150px -150px 0 0 white, 
+        165px -165px 0 0 white, 
+        180px -180px 0 0 white, 
+        195px -195px 0 0 white,
+        210px -210px 0 0 white,
+        225px -225px 0 0 white,
+        240px -240px 0 0 white,
+        255px -255px 0 0 white,
+        270px -270px 0 0 white,
+        285px -285px 0 0 white,
+        300px -300px 0 0 white,
+        315px -315px 0 0 white,
+        330px -330px 0 0 white;
+  }
+
+.align-right {
+    text-align: right;
+}
+
+.ticket-table .logo-tt {
+    width: 80%;
+}
+
+.ticket-table .logo-cuotta {
+    width: 90%;
+}
+
+.ticket-table .logo-poligono {
+    width: 100%;
+}
+
+.text-bold {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+.text-general {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.tr-head td p:nth-child(1){
+    padding: 15px 0 5px 0;
+}
+
+.tr-head td p:nth-child(2){
+    padding: 0 0 15px 0;
+}
+
+.ticket-table td {
+    padding: 3px 0;
+}
+
+.table-monto {
+    border-collapse: collapse;
+    text-align: right;
+    float: right;
+    margin: 0 8px 0 0;
+}
+
+.table-monto tr td,
+.table-monto tr th {
+    border: 1px solid #777;
+    padding: 4px 20px;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.table-monto tr td {
+    padding: 8px 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.qrcode {
+    width: 100px;
+    margin-right: 14px;
+}
+
+.text-foot {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.ticket-table .nopad {
+    padding: 0;
+}
+
+.btn {
+    border: none;
+    font-size: 1.8rem;
+    background: #0062b7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 50%);
+    transition: all .24s;
+    margin-right: 15px
+}
+
+.btn:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.74);
+}
+
+.text-mobile {
+    display: none;
+}
+
+.text-desktop {
+    display: block;
+}
+
+.recibo-footer p {
+    text-align: center;
+    font-size: 11px;
+}
+
+@media print {
+    header, .bloque, #div-gpt-ad-1641416523864-0, aside {
+        display:none;
+    }
+    .content {
+        width: 100%;
+        background: #fff;
+    }
+}
+
+@page{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+
+
+@media screen and (max-width: 1370px) {
+    .b1 {
+        width: 60%;
+    }
+    .b2 {
+        width: 40%;
+    }
+    .aside-content p {
+        font-size: 1.6rem;
+    }
+    .aside-content .btns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    aside {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        box-shadow: none;
+    }
+    aside .aside-content {
+        position: relative;
+        padding: 50px 15px;
+    }
+    .aside-content p {
+        font-size: 2rem;
+    }
+    .aside-content .btns {
+        flex-direction: row;
+        align-items: center;
+    }
+    .content {
+        width: 100%;
+    }
+    .ticket {
+        width: 320px;
+        margin-top: 20px;
+    }
+    .bloques {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 10px 0;
+    }
+    .bloque {
+        padding: 20px 0;
+        box-shadow: none;
+        background: transparent;
+        margin-top: 50px;
+    }
+    .text-general, .text-bold {
+        font-size: 1.2rem;
+    }
+    .btn {
+        margin-right: 10px;
+    }
+    .ticket-table td {
+        padding: 1px 0;
+    }
+    .table-monto {
+        width: 100%;
+    }
+    .table-monto tr td {
+        font-size: 1.6rem;
+        padding: 4px 10px;
+    }
+    .contact {
+        width: 95%;
+    }
+    .header-img {
+        padding: 0 0 0 20px;
+    }
+    .qrcode {
+        margin-right: 4px;
+    }
+    .text-mobile {
+        display: block;
+    }
+    .text-desktop {
+        display: none;
+    }
+    .ticket:after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        transform: rotate(45deg);
+        transform-Origin: 0% 100%;
+        background: white;
+        left: 0;
+        bottom: 0;
+        box-shadow: 
+            15px -15px 0 0 white, 
+            30px -30px 0 0 white, 
+            45px -45px 0 0 white, 
+            60px -60px 0 0 white, 
+            75px -75px 0 0 white, 
+            90px -90px 0 0 white, 
+            105px -105px 0 0 white, 
+            120px -120px 0 0 white, 
+            135px -135px 0 0 white, 
+            150px -150px 0 0 white, 
+            165px -165px 0 0 white, 
+            180px -180px 0 0 white, 
+            195px -195px 0 0 white,
+            210px -210px 0 0 white;
+    }
+
+}
+
+.residencial {
+    text-transform: uppercase;
+}

@@ -1,0 +1,69 @@
+StartFontMetrics 4.1
+Notice Converted by PHP-font-lib
+Comment http://php-font-lib.googlecode.com/
+EncodingScheme FontSpecific
+Copyright Copyright © 1997 by Matthew Welch. All Rights Reserved.
+FontName Free 3 of 9
+FontSubfamily Regular
+UniqueID Free 3 of 9 Regular:Version 1.01
+FullName Free 3 of 9 Regular
+Version Version 1.01
+PostScriptName Free3of9
+Trademark Free 3 of 9 Trademark of Matthew Welch
+Weight Medium
+ItalicAngle 0
+IsFixedPitch true
+UnderlineThickness 0
+UnderlinePosition 0
+FontHeightOffset 0
+Ascender 752
+Descender 0
+FontBBox 0 0 357 752
+StartCharMetrics 47
+U 32 ; WX 383 ; N space ; G 3
+U 36 ; WX 383 ; N dollar ; G 4
+U 37 ; WX 383 ; N percent ; G 5
+U 42 ; WX 383 ; N asterisk ; G 6
+U 43 ; WX 383 ; N plus ; G 7
+U 45 ; WX 383 ; N hyphen ; G 8
+U 46 ; WX 383 ; N period ; G 9
+U 47 ; WX 383 ; N slash ; G 10
+U 48 ; WX 383 ; N zero ; G 11
+U 49 ; WX 383 ; N one ; G 12
+U 50 ; WX 383 ; N two ; G 13
+U 51 ; WX 383 ; N three ; G 14
+U 52 ; WX 383 ; N four ; G 15
+U 53 ; WX 383 ; N five ; G 16
+U 54 ; WX 383 ; N six ; G 17
+U 55 ; WX 383 ; N seven ; G 18
+U 56 ; WX 383 ; N eight ; G 19
+U 57 ; WX 383 ; N nine ; G 20
+U 65 ; WX 383 ; N A ; G 21
+U 66 ; WX 383 ; N B ; G 22
+U 67 ; WX 383 ; N C ; G 23
+U 68 ; WX 383 ; N D ; G 24
+U 69 ; WX 383 ; N E ; G 25
+U 70 ; WX 383 ; N F ; G 26
+U 71 ; WX 383 ; N G ; G 27
+U 72 ; WX 383 ; N H ; G 28
+U 73 ; WX 383 ; N I ; G 29
+U 74 ; WX 383 ; N J ; G 30
+U 75 ; WX 383 ; N K ; G 31
+U 76 ; WX 383 ; N L ; G 32
+U 77 ; WX 383 ; N M ; G 33
+U 78 ; WX 383 ; N N ; G 34
+U 79 ; WX 383 ; N O ; G 35
+U 80 ; WX 383 ; N P ; G 36
+U 81 ; WX 383 ; N Q ; G 37
+U 82 ; WX 383 ; N R ; G 38
+U 83 ; WX 383 ; N S ; G 39
+U 84 ; WX 383 ; N T ; G 40
+U 85 ; WX 383 ; N U ; G 41
+U 86 ; WX 383 ; N V ; G 42
+U 87 ; WX 383 ; N W ; G 43
+U 88 ; WX 383 ; N X ; G 44
+U 89 ; WX 383 ; N Y ; G 45
+U 90 ; WX 383 ; N Z ; G 46
+U 95 ; WX 383 ; N space ; G 3
+EndCharMetrics
+EndFontMetrics

@@ -1,0 +1,139 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /* font-family: 'Patrick Hand SC', sans-serif; */
+    font-family: 'Anaheim', sans-serif;
+}
+
+*,
+::after,
+::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    font-size: 1.6rem;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #BFA2DB;
+}
+
+.aside{
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #a681c9;
+}
+
+.btn{
+    margin: 40px 0 0;
+    padding: 12px 20px;
+    border: 1px solid #a681c9;
+    border-radius: 25px;
+    background: #F0D9FF;
+    color: #000000;
+    font-family: 'Anaheim', sans-serif;
+    font-weight: bold;
+    box-shadow: 0 1px 4px rgba(0,0,0,.16);
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap{
+    width: 700px;
+    height: 600px;
+    background:#F0D9FF;
+    border-radius: 25px;
+}
+
+.wrap_data{
+    margin: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+.wrap_data table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wrap_data table tr td,
+.wrap_data table tr th{
+    border: 1px solid #F0D9FF;
+    text-align: left;
+    padding: 5px 5px 5px 10px;
+}
+
+.wrap_data table tr th{
+    color: #BFA2DB;
+}
+
+.wrap_data h2{
+    padding: 0 0 10px;
+}
+
+.form_group{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_group label{
+    width: 45%;
+}
+
+.form_group label input{
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #bbbbbb;
+    color: #58565a;
+    border-radius: 25px;
+    outline: none;
+    transition: all .24s;
+}
+
+.form_group label input:focus{
+    border: 3px solid #7F7C82;
+    box-shadow: inset 2px 4px 6px rgba(0,0,0,.16);
+}
+
+.form_group button{
+    width: 45%;
+    text-transform: uppercase;
+    background: #845ea7;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.form_group label span{
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.form_group label input.input_info{
+    background:#f8f8f8ef;
+    border-color: #eeeeee;
+}
+
+.form_group label input.input_info:focus{
+    box-shadow: none;
+    border: 1px solid #eeeeee;
+}

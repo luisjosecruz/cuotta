@@ -1,0 +1,155 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+} 
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: #e5e9ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luismartbox {
+    display: flex;
+    width: 790px;
+    min-height: 450px;
+    background: rgba(255,255,255,.7);
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    position: relative;
+}
+
+.luismartbox-header {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.luismartbox-header h1 {
+    font-size: 2rem;
+    padding: 0;
+}
+
+.luismartbox-header p {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: normal;
+    color: #787878;
+    padding: 0;
+}
+
+.luismartbox-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.luismartbox-img {
+    width: 50%;
+    padding: 40px;
+}
+
+.luismartbox-img img {
+    width: 100%;
+}
+
+.luismartbox-box {
+    width: 50%;
+    padding: 20px 40px 20px 20px;
+}
+
+.luismartbox-menu {
+    width: 100%;
+    padding: 10px;
+}
+
+.luismartbox-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.luismartbox-menu ul li {
+    width: 100%;
+}
+
+.luismartbox-menu ul li a {
+    display: block;
+    border: 1px solid #ddd;
+    padding: 6px 10px;
+    margin: 2px;
+    font-size: 1.4rem;
+    color: #e5e9ec;
+    background: #0062b7;
+    border-radius: 4px;
+    text-align: left;
+    box-shadow: -1px 2px 4px rgb(0 0 0 / 10%);
+    transition: all .26s;
+}
+
+.luismartbox-menu ul li a:hover {
+    background: #013874;
+}
+
+.luismartbox-menu ul li a span {
+    float: right;
+}
+
+#img_ppal_frm {
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 5px;
+}
+
+.bkg-svg_img_ppal_frm {
+    fill: #0062b7;
+}
+
+.tt1-svg_img_ppal_frm, .tt2-svg_img_ppal_frm {
+    fill: #fff;
+}
+
+.body-svg_img_ppal_frm {
+    fill: #013874;
+}
+
+#logout {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: 1px solid #cacaca;
+    color: #535353;
+    cursor: pointer;
+}
