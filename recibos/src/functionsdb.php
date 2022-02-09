@@ -5,7 +5,7 @@ function getData($pdo, $route)
     $sql = "SELECT reciboID, reciboNumero, reciboSerie, DATE_FORMAT(recibos.reciboFecha, '%d/%m/%Y') reciboFecha, 
             reciboMonto, reciboLink, contactos.contNombre, contactos.contApellido, 
             propiedades.propAlias, propiedades.propTipo, propiedades.propDireccion1, 
-            abonos.abonoData, DATE_FORMAT(abonos.abonoTStamp, '%d/%m/%Y') abonoTStamp
+            abonos.abonoRef, DATE_FORMAT(abonos.abonoTStamp, '%d/%m/%Y') abonoTStamp
             FROM recibos 
             INNER JOIN propiedades ON propiedades.propID = recibos.propID
             INNER JOIN vinculacion ON vinculacion.vincPropID = propiedades.propID

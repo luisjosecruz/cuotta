@@ -268,7 +268,7 @@ html{
                         </tr>
                         <tr>
                             <td class="text-bold">REFERENCIA: </td>
-                            <td class="text-general" colspan="2">'.$r->abonoData.'</td>
+                            <td class="text-general" colspan="2">'.$r->abonoRef.'</td>
                         </tr>
                         <tr>
                             <td colspan="3">

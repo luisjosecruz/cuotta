@@ -11,6 +11,7 @@ class Mandamientos
                 mandamientos.mandCorrelativo, 
                 mandamientos.mandFechaFin,
                 mandamientos.mandSaldoFinal,
+                mandamientos.mandStatus, 
                 propiedades.propDireccion1,
                 comunidades.comNombre,
                 contactos.contNombre,
@@ -21,7 +22,7 @@ class Mandamientos
                 INNER JOIN comunidades ON comunidades.comID = propiedades.comID
                 INNER JOIN vinculacion ON propiedades.propID = vinculacion.vincPropID
                 INNER JOIN contactos ON contactos.contID = vinculacion.vincContactoID
-            WHERE vinculacion.vincOrden = 1 AND mandamientos.mandHash  = ?
+            WHERE vinculacion.vincOrden = 1 AND mandamientos.mandHash = ?
         ");
         $stmt->bind_param("s", $data["route"]);
         $stmt->execute();

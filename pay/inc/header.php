@@ -19,3 +19,9 @@
     <link rel="stylesheet" href="assets/css/desktop.css" media="(min-width: 1024px)">
 </head>
 <body>
+<header class="headbar">
+    <div class="header-img">
+        <img class="logo-cuotta" src="https://cuotta.com/recibos/assets/images/logo-cuotta.png" alt="logo-cuotta">
+    </div>
+    <h1 class="header-title"></h1>
+</header>

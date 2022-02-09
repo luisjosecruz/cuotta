@@ -148,7 +148,7 @@ function payCardUSD () {
         "configuracion": {
             "emailsNotificacion": "luisjosecruzmart@gmail.com",
             "urlWebhook": "https://developer.cuotta.com/pay/webhook.php",
-            "notificarTransaccionCliente": true
+            "notificarTransaccionCliente": false
         },
         "datosAdicionales": {
             "Mandamiento" : mandamiento,
@@ -296,7 +296,7 @@ function payWithBTC () {
             "emailsNotificacion": "luisjosecruzmart@gmail.com",
             "urlWebhook": "https://developer.cuotta.com/pay/webhook.php",
             "telefonosNotificacion": "61760155",
-            "notificarTransaccionCliente": true
+            "notificarTransaccionCliente": false
         },
         "datosAdicionales": {
             "Mandamiento" : mandamiento,

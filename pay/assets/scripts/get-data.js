@@ -13,10 +13,16 @@ $.ajax({
 // reload if access token is empty
 setTimeout(() => {
     if (access_token === undefined) {
-        $.ajax({ type: "POST", url: "src/get_token.php", success: (response) => access_token = response});
+        $.ajax({ 
+            type: "POST", 
+            url: "src/get_token.php", 
+            success: (response) => {
+                access_token = response;
+            }
+        });
     }
     console.log(access_token);
-}, 2000);
+}, 1500);
 
 // load info to pay
 $.ajax({
@@ -30,6 +36,7 @@ $.ajax({
 });
 
 function showInfo(json) {
+    let imgPaid = json.mandStatus;
     $(".mandamiento").text(json.mandCorrelativo);
     $(".info-casa").text(json.comNombre);
     setTimeout(() => $(".info-cliente span").text(json.contNombre + " " + json.contApellido), 100);
@@ -37,6 +44,16 @@ function showInfo(json) {
     setTimeout(() => $(".fecha-pago span").text(json.mandFechaFin), 200);
     setTimeout(() => $(".monto-total").text('$'+json.mandSaldoFinal), 250);
 
+    if (imgPaid != "pagado") {
+        $(".img-container").hide();
+    } else {
+        $(".img-container").show();
+        $("#test_transactions").attr("disabled", "true");
+        $("#payWithBTC").attr("disabled", "true");
+        $("#test_transactions").hide();
+        $("#payWithBTC").hide();
+    }
+    
     $('.loader').fadeOut();
 }
 

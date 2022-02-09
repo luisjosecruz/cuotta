@@ -35,6 +35,8 @@
                     </section>
                     <section class="luismartbox-menu">
                         <ul>
+                            <li><a target="_blank" href="<?=$URLSERVER?>printv5">Estados de cuenta <span>Febrero B</span></a></li>
+                            <li><a target="_blank" href="<?=$URLSERVER?>printv4">Estados de cuenta <span>Febrero A</span></a></li>
                             <li><a target="_blank" href="<?=$URLSERVER?>printv3">Estados de cuenta <span>v.3.0</span></a></li>
                             <li><a target="_blank" href="<?=$URLSERVER?>printv2">Estados de cuenta <span>v.2.0</span></a></li>
                             <li><a target="_blank" href="<?=$URLSERVER?>printv1">Estados de cuenta <span>v.1.0</span></a></li>

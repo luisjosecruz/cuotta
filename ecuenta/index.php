@@ -23,6 +23,16 @@ $URLORIGIN = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" :
 session_start();
 
 switch($route){
+    case 'printv5':
+        $fact = (isset($uri_parts[2])) ? $uri_parts[2] : "";
+        require_once ('views/ecuentas_v5.php');
+
+        break;
+    case 'printv4':
+        $fact = (isset($uri_parts[2])) ? $uri_parts[2] : "";
+        require_once ('views/ecuentas_v4.php');
+
+        break;
     case 'printv3':
         $fact = (isset($uri_parts[2])) ? $uri_parts[2] : "";
         require_once ('views/ecuentas_v3.php');

@@ -16,6 +16,9 @@
                     <p class="monto-total">...</p>
                 </div>
             </article>
+            <article class="img-container">
+                <img src="https://developer.cuotta.com/imagenes/pagado.png" alt="Pagado">
+            </article>
         </header>
 
         <div class="secure">
@@ -27,7 +30,7 @@
             <div class="tab">
                 <div class="tab-buttons">
                     <button class="btn btn-tab tab1" tab="card"><span>Pago con tarjeta</span></button>
-                    <button class="btn btn-tab tab2" tab="btc"><span>Pago con bitcoin</span></button>
+                    <button style="display:none;" class="btn btn-tab tab2" tab="btc"><span>Pago con bitcoin</span></button>
                 </div>
                 <p class="line line-left"></p>
                 <div class="tab-container">
@@ -41,23 +44,33 @@
                                 <span>Correo electrónico</span>
                                 <input id="card_email" type="text" maxlength="150" autocomplete="off">
                             </div>
+                            <div class="form-content">
+                                <div class="form-group cliname">
+                                    <span>Número de tarjeta</span>
+                                    <input id="card_number" type="text" maxlength="22">
+                                </div>
+                                <div class="form-group cvv">
+                                    <span>CVV</span>
+                                    <input id="card_cvv" type="tel" maxlength="3">
+                                </div>
+                            </div>
                             <div class="form-group expiration">
                                 <span>Fecha de expiración</span>
                                 <div class="expiration-date">
                                     <select name="card_month" id="card_month">
                                         <option value="0" selected disabled>Mes</option>
-                                        <option value="1">Enero</option>
-                                        <option value="2">Febrero</option>
-                                        <option value="3">Marzo</option>
-                                        <option value="4">Abril</option>
-                                        <option value="5">Mayo</option>
-                                        <option value="6">Junio</option>
-                                        <option value="7">Julio</option>
-                                        <option value="8">Agosto</option>
-                                        <option value="9">Septiembre</option>
-                                        <option value="10">Octubre</option>
-                                        <option value="11">Noviembre</option>
-                                        <option value="12">Diciembre</option>
+                                        <option value="1">01 - Enero</option>
+                                        <option value="2">02 - Febrero</option>
+                                        <option value="3">03 - Marzo</option>
+                                        <option value="4">04 - Abril</option>
+                                        <option value="5">05 - Mayo</option>
+                                        <option value="6">06 - Junio</option>
+                                        <option value="7">07 - Julio</option>
+                                        <option value="8">08 - Agosto</option>
+                                        <option value="9">09 - Septiembre</option>
+                                        <option value="10">1 0 - Octubre</option>
+                                        <option value="11">1 1 - Noviembre</option>
+                                        <option value="12">1 2 - Diciembre</option>
                                     </select>
                                     <select name="card_year" id="card_year">
                                         <option value="0" selected disabled>Año</option>
@@ -74,22 +87,12 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="form-content">
-                                <div class="form-group cliname">
-                                    <span>Número de tarjeta</span>
-                                    <input id="card_number" type="text" maxlength="22">
-                                </div>
-                                <div class="form-group cvv">
-                                    <span>CVV</span>
-                                    <input id="card_cvv" type="tel" maxlength="3">
-                                </div>
-                            </div>
                             <div class="form-group">
                                 <button class="btn" id="test_transactions">Proceder a pagar</button>
                             </div>
                         </form>
                     </div>
-                    <div class="tab-content panel2">
+                    <!-- <div class="tab-content panel2">
                         <form>
                             <div class="form-content">
                                 <div class="form-group">
@@ -111,18 +114,18 @@
                                     <input id="client_day" type="text" placeholder="Día" autocomplete="off" maxlength="2">
                                     <select name="client_month" id="client_month">
                                         <option value="0" selected disabled>Mes</option>
-                                        <option value="1">Enero</option>
-                                        <option value="2">Febrero</option>
-                                        <option value="3">Marzo</option>
-                                        <option value="4">Abril</option>
-                                        <option value="5">Mayo</option>
-                                        <option value="6">Junio</option>
-                                        <option value="7">Julio</option>
-                                        <option value="8">Agosto</option>
-                                        <option value="9">Septiembre</option>
-                                        <option value="10">Octubre</option>
-                                        <option value="11">Noviembre</option>
-                                        <option value="12">Diciembre</option>
+                                        <option value="1">01 - Enero</option>
+                                        <option value="2">02 - Febrero</option>
+                                        <option value="3">03 - Marzo</option>
+                                        <option value="4">04 - Abril</option>
+                                        <option value="5">05 - Mayo</option>
+                                        <option value="6">06 - Junio</option>
+                                        <option value="7">07 - Julio</option>
+                                        <option value="8">08 - Agosto</option>
+                                        <option value="9">09 - Septiembre</option>
+                                        <option value="10">1 0 - Octubre</option>
+                                        <option value="11">1 1 - Noviembre</option>
+                                        <option value="12">1 12 - Diciembre</option>
                                     </select>
                                     <input id="client_year" type="text" placeholder="Año" autocomplete="off" maxlength="4">
                                 </div>
@@ -137,24 +140,16 @@
                             </div>
                             <div class="form-content">
                                 <div class="form-group">
-                                    <span>Región</span>
+                                    <span>País</span>
                                     <select name="client_region" id="client_region">
-                                        <option value="0" disabled>País</option>
-                                        <!-- <option value="CA">Canadá</option>
-                                        <option value="CR">Costa Rica</option> -->
+                                        <option value="0" disabled>Seleccionar</option>
                                         <option value="SV" selected>El Salvador</option>
-                                        <!-- <option value="US">Estados Unidos</option> 
-                                        <option value="GT">Guatemala</option>
-                                        <option value="HN">Honduras</option>
-                                        <option value="MX">México</option>
-                                        <option value="NI">Nicaragua</option>
-                                        <option value="PA">Panamá</option> -->
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <span>Territorio</span>
+                                    <span>Departamento</span>
                                     <select name="client_territorio" id="client_territorio">
-                                        <option value="0" disabled>Departamento</option>
+                                        <option value="0" disabled>Seleccionar</option>
                                         <option value="SV-AH">Ahuachapán</option>
                                         <option value="SV-CA">Cabañas</option>
                                         <option value="SV-CH">Chalatenango</option>
@@ -177,7 +172,7 @@
                             </div>
                         </form>
                     </div>
-                </div>
+                </div> -->
                 <a class="xtab">X</a>
             </div>
         </article>

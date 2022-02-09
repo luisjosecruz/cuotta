@@ -99,6 +99,7 @@
 
                                 if($query->rowCount() > 0){
                                     foreach($result as $r){
+                                        $ref = $r->abonoRef;
                             ?>
                                 <table width="100%" class="ticket-table">
                                     <tr>
@@ -140,7 +141,7 @@
                                     </tr>
                                     <tr>
                                         <td class="text-bold">REFERENCIA: </td>
-                                        <td class="text-general" colspan="2"><?=$r->abonoData?></td>
+                                        <td class="text-general" colspan="2"><?=$ref?></td>
                                     </tr>
                                     <tr>
                                         <td colspan="3">
